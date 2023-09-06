@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header";
+import WelcomeUser from "./components/welcomeuser";
+import AddTask from "./components/addTask";
+import Description from "./components/description";
+import RenderTask from "./components/renderTask";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <div style={{ display: "flex", justifyContent: "center", gap: "30px" }}>
+                <WelcomeUser />
+
+                <div>
+                    <AddTask />
+                    <RenderTask />
+                </div>
+
+                <Description />
+            </div>
+        </div>
+    );
 }
 
 export default App;

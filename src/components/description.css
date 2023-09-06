@@ -1,0 +1,26 @@
+.descriptionContainer {
+    margin-top: 20px;
+    width: 300px;
+    height: 400px;
+    position: sticky;
+    background-color: aliceblue;
+}
+
+.decriptionatag {
+    color: gray;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.decriptionatag:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.atags {
+    padding: 10px 30px;
+}
+.p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}

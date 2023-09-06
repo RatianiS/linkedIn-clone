@@ -1,0 +1,52 @@
+.task {
+    background-color: white;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: 1px rgb(221, 221, 221) solid;
+    border-radius: 10px;
+}
+
+.tasklist-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasklist-profile {
+    display: flex;
+    gap: 10px;
+}
+
+.text {
+    margin-top: 10px;
+    max-width: 500px;
+    overflow-wrap: break-word;
+}
+
+.like-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-top: 1px rgb(221, 221, 221) solid;
+    border-bottom: 1px rgb(221, 221, 221) solid;
+}
+
+.modal-buttons {
+    margin-top: 10px;
+    width: 100px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-buttons:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.modal-img {
+    width: 30px;
+}

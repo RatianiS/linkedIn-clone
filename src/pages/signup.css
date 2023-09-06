@@ -1,0 +1,83 @@
+.signup-linkedin-logo {
+    width: 135px;
+    margin-top: 25px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.signup-bcg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-head-p {
+    font-size: 32px;
+}
+
+.signup-form {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 24px 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.signup-input {
+    width: 350px;
+    height: 35px;
+}
+
+.signup-form-p {
+    font-size: 12px;
+}
+
+.join-button {
+    width: 350px;
+    height: 48px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #0a66c2;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.go-to-signin {
+    color: #0a66c2;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.go-to-signin:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.signup-a-tag {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+.signup-a-tag:hover {
+    color: blue;
+    text-decoration: underline;
+}
