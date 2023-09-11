@@ -42,6 +42,7 @@ const Modal = ({ isOpen, onClose }) => {
             like: 0,
             comment: [],
             date: new Date().toLocaleString(),
+            likedUsers: [],
         };
 
         const updatedArray = tasks.concat([newTask]);

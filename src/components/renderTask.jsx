@@ -3,9 +3,11 @@ import { readLocalStorage } from "../helpers/helpers";
 import "./renderTask.css";
 
 const RenderTask = () => {
+    const currentUserId = readLocalStorage("id");
+
     const [likedPosts, setLikedPosts] = useState(() => {
-        const likedPostsFromStorage = JSON.parse(localStorage.getItem("likedPosts")) || [];
-        return likedPostsFromStorage;
+        const likedPostsForUser = JSON.parse(localStorage.getItem(`likedPosts_${currentUserId}`)) || [];
+        return likedPostsForUser;
     });
 
     const tasks = readLocalStorage("tasks");
@@ -39,9 +41,8 @@ const RenderTask = () => {
     };
 
     useEffect(() => {
-        localStorage.setItem("likedPosts", JSON.stringify(likedPosts));
-        console.log("likedPosts:", likedPosts);
-    }, [likedPosts]);
+        localStorage.setItem(`likedPosts_${currentUserId}`, JSON.stringify(likedPosts));
+    }, [likedPosts, currentUserId]);
 
     const tasklist = tasks.map((task) => {
         const isLiked = likedPosts.includes(task.postid);
