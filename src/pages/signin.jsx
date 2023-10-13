@@ -1,13 +1,14 @@
-import "./signin.css";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { readLocalStorage } from "../helpers/helpers";
+import "./signin.css";
 
 const Signin = () => {
     const navigate = useNavigate();
     const [email, seteMail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
+    const [showImage, setShowImage] = useState(true);
 
     const onFormSubmit = (e) => {
         e.preventDefault();
@@ -32,6 +33,23 @@ const Signin = () => {
         navigate("/");
     };
 
+    useEffect(() => {
+        const checkScreenWidth = () => {
+            if (window.innerWidth <= 1310) {
+                setShowImage(false);
+            } else {
+                setShowImage(true);
+            }
+        };
+
+        checkScreenWidth();
+        window.addEventListener("resize", checkScreenWidth);
+
+        return () => {
+            window.removeEventListener("resize", checkScreenWidth);
+        };
+    }, []);
+
     return (
         <div className="signin-bcg" style={{ backgroundColor: "white", height: "100vh" }}>
             <header className="signin-header">
@@ -48,7 +66,7 @@ const Signin = () => {
                             src="https://cdn-icons-png.flaticon.com/512/265/265104.png"
                             alt=""
                         />
-                        <p>Articles</p>
+                        <p className="signin-header-ptags">Articles</p>
                     </div>
 
                     <div className="sigin-buttons">
@@ -57,7 +75,7 @@ const Signin = () => {
                             src="https://cdn-icons-png.flaticon.com/512/2118/2118701.png"
                             alt=""
                         />
-                        <p>People</p>
+                        <p className="signin-header-ptags">People</p>
                     </div>
 
                     <div className="sigin-buttons">
@@ -66,7 +84,7 @@ const Signin = () => {
                             src="https://d30y9cdsu7xlg0.cloudfront.net/png/13653-200.png"
                             alt=""
                         />
-                        <p>learning</p>
+                        <p className="signin-header-ptags">learning</p>
                     </div>
 
                     <div className="sigin-buttons">
@@ -75,7 +93,7 @@ const Signin = () => {
                             src="https://icon-library.com/images/job-icon/job-icon-6.jpg"
                             alt=""
                         />
-                        <p>Jobs</p>
+                        <p className="signin-header-ptags">Jobs</p>
                     </div>
 
                     <button
@@ -145,11 +163,13 @@ const Signin = () => {
                     </div>
                 </form>
 
-                <img
-                    style={{ height: "600px", marginTop: "50px", marginLeft: "30px" }}
-                    src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4"
-                    alt=""
-                />
+                {showImage && (
+                    <img
+                        style={{ height: "600px", marginTop: "50px", marginLeft: "30px" }}
+                        src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4"
+                        alt=""
+                    />
+                )}
             </div>
         </div>
     );

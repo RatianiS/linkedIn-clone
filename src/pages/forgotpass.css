@@ -16,3 +16,29 @@
     gap: 20px;
     border-radius: 10px;
 }
+
+.forgetpass-buttons {
+    width: 110px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.footer-forgetpass {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 580px) {
+    .footer-forgetpass {
+        display: none;
+    }
+    .forgot-pass-form {
+        margin-bottom: 250px;
+    }
+}

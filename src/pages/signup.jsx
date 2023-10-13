@@ -2,7 +2,6 @@ import "./signup.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { readLocalStorage } from "../helpers/helpers";
-// linkedIn
 
 const Signup = () => {
     const navigate = useNavigate();

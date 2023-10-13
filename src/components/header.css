@@ -1,23 +1,29 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 0px 24px;
     background-color: white;
-    max-width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-around;
-    position: sticky;
+    z-index: 100;
+    /* margin-bottom: 500px; */
 }
 .logoandsearch {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .headernav {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logodivs {
     width: 80px;
     padding: 3px;
@@ -27,6 +33,7 @@
     justify-content: center;
     cursor: pointer;
 }
+
 .logodivs:hover {
     border-bottom: 2px black solid;
 }
@@ -34,6 +41,7 @@
 .logo {
     width: 25px;
 }
+
 .linkedinlogo {
     width: 45px;
     cursor: pointer;
@@ -47,9 +55,11 @@
     border: none;
     background-color: #dbecfd;
 }
+
 .logotext {
     font-size: 12px;
 }
+
 a {
     color: #915907;
     font-size: 12px;
@@ -59,4 +69,61 @@ a {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 50px;
+        padding: 0 12px;
+    }
+
+    .headernav {
+        width: 100%;
+    }
+
+    .logoandsearch {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 40px;
+        padding: 0 12px;
+    }
+
+    .headernav {
+        width: 90%;
+    }
+
+    .logoandsearch {
+        display: none;
+    }
+
+    .logodivs {
+        width: 60px;
+    }
+
+    .logo {
+        width: 20px;
+    }
+
+    .linkedinlogo {
+        width: 35px;
+        margin-right: 5px;
+    }
+
+    .logotext {
+        font-size: 10px;
+    }
+
+    a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .logodivs p {
+        display: none;
+    }
 }

@@ -24,3 +24,35 @@
     margin-left: 20px;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .descriptionContainer {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .decriptionatag {
+        margin-left: 20px;
+    }
+
+    .p {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .descriptionContainer {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .decriptionatag {
+        margin-left: 10px;
+    }
+
+    .p {
+        margin-left: 10px;
+    }
+}

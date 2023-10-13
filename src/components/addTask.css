@@ -7,18 +7,21 @@
     border: 1px rgb(194, 193, 193) solid;
     border-radius: 10px;
 }
+
 .ImgAndButtonDiv {
     padding: 2px;
     display: flex;
     align-items: center;
     gap: 5px;
 }
+
 .addtaskimg {
     background-color: gray;
     width: 48px;
     height: 48px;
     border-radius: 50px;
 }
+
 .postButton {
     background-color: transparent;
     height: 48px;
@@ -31,6 +34,7 @@
     font-weight: 700;
     color: gray;
 }
+
 .postButton:hover {
     background-color: rgb(227, 226, 226);
 }
@@ -43,7 +47,6 @@
 }
 
 .buttondivs {
-    /* background-color: antiquewhite; */
     width: 88px;
     height: 47px;
     display: flex;
@@ -54,6 +57,7 @@
     font-weight: 700;
     color: gray;
 }
+
 .buttondivs:hover {
     background-color: rgb(227, 226, 226);
 }
@@ -61,4 +65,36 @@
 .buttonimage {
     width: 24px;
     height: 24px;
+}
+
+@media (max-width: 480px) {
+    .buttondivs {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .addtaskimg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .postButton {
+        height: 36px;
+        padding-left: 10px;
+    }
+
+    .buttondivs {
+        width: 70px;
+    }
+
+    .buttonimage {
+        width: 20px;
+        height: 20px;
+    }
 }

@@ -23,7 +23,7 @@ const ForgotPassword = () => {
                 <div>
                     <button
                         style={{ height: "32px" }}
-                        className="join-now-button"
+                        className="forgetpass-buttons"
                         onClick={(e) => {
                             e.preventDefault();
                             navigate("/signup");
@@ -59,7 +59,7 @@ const ForgotPassword = () => {
                     <input style={{ width: "350px" }} type="email" placeholder="Email" />
                     <button className="join-button">Reset password</button>
                     <button
-                        className="join-now-button"
+                        className="forgetpass-buttons"
                         onClick={(e) => {
                             e.preventDefault();
                             navigate("/signin");
@@ -70,7 +70,7 @@ const ForgotPassword = () => {
                 </div>
             </form>
 
-            <footer style={{ backgroundColor: "transparent" }}>
+            <footer className="footer-forgetpass" style={{ backgroundColor: "transparent" }}>
                 <a className="signup-a-tag" href="">
                     About
                 </a>

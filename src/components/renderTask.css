@@ -50,3 +50,48 @@
 .modal-img {
     width: 30px;
 }
+
+@media (max-width: 768px) {
+    .task {
+        padding: 10px;
+    }
+
+    .tasklist-profile {
+        flex-direction: row;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .task {
+        padding: 5px;
+    }
+
+    .tasklist-header {
+        font-size: 12px;
+    }
+
+    .tasklist-profile {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .text {
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .like-comment {
+        flex-direction: row;
+        font-size: 12px;
+    }
+
+    .modal-buttons {
+        width: 80px;
+        height: 28px;
+    }
+
+    .modal-img {
+        width: 20px;
+    }
+}

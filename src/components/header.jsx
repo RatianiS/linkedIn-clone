@@ -87,9 +87,6 @@ const Header = () => {
                     />
                     <p className="logotext">For Business</p>
                 </div>
-                <a href="">
-                    Get hired faster. <br /> Try Premium free.
-                </a>
 
                 <button className="logout" onClick={onSignout}>
                     <img
