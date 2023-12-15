@@ -39,6 +39,10 @@
     .p {
         margin-left: 10px;
     }
+
+    .dadsdasdd {
+        columns: 2;
+    }
 }
 
 @media (max-width: 480px) {
